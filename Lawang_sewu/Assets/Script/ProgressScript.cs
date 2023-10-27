@@ -5,23 +5,27 @@ using UnityEngine.UI;
 
 public class ProgressScript : MonoBehaviour
 {
-  public Slider slider;
-  public int maxTimerinSeconds = 60;
-  private int secondsLeft;
+    public Slider slider;
+    public int maxTimerinSeconds = 60;
+    private float timeElapsed = 0f;
 
-    private void Start() {
+    private void Start()
+    {
         slider.maxValue = maxTimerinSeconds;
     }
 
-    public void SetProgress(int seconds){
-        slider.value = seconds;
-    }
-
-    private void Update() {
+    private void Update()
+    {
         // timer countdown
+        timeElapsed += Time.deltaTime;
 
-        secondsLeft = maxTimerinSeconds - (int)Time.timeSinceLevelLoad;
-        SetProgress(secondsLeft);
+        if (timeElapsed <= maxTimerinSeconds)
+        {
+            slider.value = timeElapsed;
+        }
+        else
+        {
+            slider.value = maxTimerinSeconds;
+        }
     }
-   
 }
