@@ -22,6 +22,8 @@ public class PlayerHP : MonoBehaviour
         hp = 3;
         isHit = false;
         bot = GameObject.Find(Bottom.name);
+        mid = GameObject.Find(Mid.name);
+        top = GameObject.Find(Top.name);
 
     }
 
@@ -42,14 +44,8 @@ public class PlayerHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Door")
         {
-            Debug.Log("Hit");
-        }
-
-
-        if (collision.gameObject.tag == "Door")
-        {
             isHit = true;
-            currentHp -= 1;
+            hp -= 1;
 
             if (hp == 2 && bot != null)
             {
