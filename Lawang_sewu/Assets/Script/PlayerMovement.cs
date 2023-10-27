@@ -8,34 +8,41 @@ public class PlayerMovement : MonoBehaviour
     public TMP_InputField textBox;
     private Transform playerPos;
     private string commandText;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         playerPos = gameObject.transform;
+        textBox.ActivateInputField();
+        textBox.Select();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            if(commandText == "Left")
+            if (commandText == "Left" || commandText == "left" || commandText == "LEFT")
             {
-                if(playerPos.position.x > -2)
+                if (playerPos.position.x > -2)
                 {
                     playerPos.position += new Vector3(-2, 0, 0);
                 }
-                Debug.Log("Ke kiri");
+                else if (playerPos.position.x == -2)
+                {
+                    Debug.Log("Anda Gagal, Terbentur Dinding Kiri");
+                }
+                commandText = null;
             }
-            
-            if(commandText == "Right")
+
+            else if (commandText == "Right" || commandText == "right" || commandText == "RIGHT")
             {
-                if(playerPos.position.x < 2)
+                if (playerPos.position.x < 2)
                 {
                     playerPos.position += new Vector3(2, 0, 0);
                 }
-                Debug.Log("Ke kanan");
+                else if (playerPos.position.x == 2)
+                {
+                    Debug.Log("Anda Gagal, Terbentur Dinding Kanan");
+                }
+                commandText = null;
             }
         }
     }
@@ -43,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
     public void GetText()
     {
         commandText = textBox.text;
-        Debug.Log(textBox.text);
+        textBox.text = "";
+        textBox.ActivateInputField();
+        textBox.Select();
     }
 }
