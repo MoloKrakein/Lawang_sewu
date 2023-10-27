@@ -291,6 +291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 332082750191291382, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -992278477, guid: fa426d14a5447764fa2509b18c73940f, type: 3}
     - target: {fileID: 2266381387030349152, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -339,6 +343,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1553721960}
+    - target: {fileID: 6304519719372032228, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -992278477, guid: fa426d14a5447764fa2509b18c73940f, type: 3}
+    - target: {fileID: 7187600296669231001, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -992278477, guid: fa426d14a5447764fa2509b18c73940f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
