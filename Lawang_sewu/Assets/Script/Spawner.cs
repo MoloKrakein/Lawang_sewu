@@ -4,18 +4,60 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject doorPrefab;
+    [SerializeField] private GameObject closeDoorPrefab;
+    [SerializeField] private GameObject openDoorPrefab;
+    private bool leftLaneClicked = false;
+    private bool rightLaneClicked = false;
+    private bool middleLaneClicked = false;
 
-    private void Update()
+    private void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space)) 
+        InvokeRepeating("SpawnDoor", 2f, 3f);
+    }
+
+    private void SpawnDoor()
+    {
+        if(leftLaneClicked)
         {
-            Instantiate(doorPrefab, new Vector3(0, 7, 0), Quaternion.identity);
+            Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
+            Instantiate(closeDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
+            Instantiate(openDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
+            leftLaneClicked = false;
+        }
+        else if (middleLaneClicked)
+        {
+            Instantiate(closeDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
+            Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
+            Instantiate(openDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
+            middleLaneClicked = false;
+        }
+        else if(rightLaneClicked)
+        {
+            Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
+            Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
+            Instantiate(closeDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
+            rightLaneClicked = false;
+        }
+        else
+        {
+            Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
+            Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
+            Instantiate(openDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
         }
     }
 
-    public void LaneClicked()
+    public void LeftLaneClicked()
     {
-        Instantiate(doorPrefab);
+        leftLaneClicked = true;
+    }
+
+    public void MiddleLaneClicked()
+    {
+        middleLaneClicked = true;
+    }
+
+    public void RightLaneClicked() 
+    {
+        rightLaneClicked = true;
     }
 }

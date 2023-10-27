@@ -6,6 +6,7 @@ public class DoorMovement : MonoBehaviour
 {
     private Transform door;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private float lifeTime;
 
     private void Start()
     {
@@ -15,5 +16,11 @@ public class DoorMovement : MonoBehaviour
     private void Update()
     {
         door.Translate(new Vector3(0, -1 * Time.deltaTime * moveSpeed, 0));
+        Invoke("DestroyDoor", lifeTime);
     }
+
+    private void DestroyDoor()
+    {
+        Destroy(gameObject);
+    } 
 }
