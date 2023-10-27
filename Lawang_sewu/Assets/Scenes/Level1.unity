@@ -1325,8 +1325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d242b0ea01efb034592dbf1283036032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeDoorPrefab: {fileID: 0}
-  openDoorPrefab: {fileID: 0}
+  closeDoorPrefab: {fileID: 4836655810324399964, guid: 0066cd7b81fd1d3409c698fb7d7efe2c, type: 3}
+  openDoorPrefab: {fileID: 4836655810324399964, guid: aab015f8ec657b943b0994ff1965b789, type: 3}
 --- !u!1 &1388996769
 GameObject:
   m_ObjectHideFlags: 0
