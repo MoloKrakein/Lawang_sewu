@@ -1120,12 +1120,16 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 8088683594654775863, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
       propertyPath: speed
-      value: 0.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8088683594654775863, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1567062948}
+    - target: {fileID: 8088683594654775863, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
+      propertyPath: ShakeCameraTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8806353449063281651, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
       propertyPath: m_SortingOrder
       value: 10
