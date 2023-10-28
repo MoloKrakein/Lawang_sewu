@@ -8,45 +8,28 @@ public class PlayerMovement : MonoBehaviour
     public TMP_InputField textBox;
     private Transform playerPos;
     private string commandText;
+    private bool isMoving;
+    [SerializeField] private float speed;
+
+    private Vector3 destinationPosition;
 
     void Start()
     {
-        playerPos = gameObject.transform;
+        playerPos = transform; // You don't need gameObject.transform; transform is a reference to the current object's Transform.
         textBox.ActivateInputField();
         textBox.Select();
     }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (isMoving)
         {
-            if (commandText == "left")
-            {
-                if (playerPos.position.x > -2)
-                {
-                    playerPos.position += new Vector3(-2, 0, 0);
-                }
-                else if (playerPos.position.x == -2)
-                {
-                    Debug.Log("Anda Gagal, Terbentur Dinding Kiri");
-                }
-                commandText = null;
-            }
+            // Move towards the destination position
+            transform.position = Vector3.MoveTowards(transform.position, destinationPosition, Time.deltaTime * speed);
 
-            else if (commandText == "right")
+            if (transform.position == destinationPosition)
             {
-                if (playerPos.position.x < 2)
-                {
-                    playerPos.position += new Vector3(2, 0, 0);
-                }
-                else if (playerPos.position.x == 2)
-                {
-                    Debug.Log("Anda Gagal, Terbentur Dinding Kanan");
-                }
-                commandText = null;
-            }
-            else
-            {
-                Debug.Log("Typo");
+                isMoving = false;
             }
         }
     }
@@ -57,5 +40,44 @@ public class PlayerMovement : MonoBehaviour
         textBox.text = "";
         textBox.ActivateInputField();
         textBox.Select();
+
+        if (commandText == "left")
+        {
+            MoveLeft();
+        }
+        else if (commandText == "right")
+        {
+            MoveRight();
+        }
+        else
+        {
+            Debug.Log("Typo");
+        }
+    }
+
+    public void MoveLeft()
+    {
+        if (transform.position.x > -2)
+        {
+            isMoving = true;
+            destinationPosition = new Vector3(transform.position.x - 2, transform.position.y, 0);
+        }
+        else
+        {
+            Debug.Log("Anda Gagal, Terbentur Dinding Kiri");
+        }
+    }
+
+    public void MoveRight()
+    {
+        if (transform.position.x < 2)
+        {
+            isMoving = true;
+            destinationPosition = new Vector3(transform.position.x + 2, transform.position.y, 0);
+        }
+        else
+        {
+            Debug.Log("Anda Gagal, Terbentur Dinding Kanan");
+        }
     }
 }
