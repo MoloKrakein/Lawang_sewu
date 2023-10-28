@@ -22,5 +22,13 @@ public class DoorMovement : MonoBehaviour
     private void DestroyDoor()
     {
         Destroy(gameObject);
-    } 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Cant Click")
+        {
+            ClickDoor.currentClose = 2;
+        }
+    }
 }
