@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private Transform playerPos;
     private string commandText;
     private bool isMoving;
+    public Camera cam;
+    public float ShakeCameraTime = 1f;
     [SerializeField] private float speed;
 
     private Vector3 destinationPosition;
@@ -37,6 +39,20 @@ public class PlayerMovement : MonoBehaviour
         textBox.Select();
     }
 
+    IEnumerator CamShake(){
+        Vector3 originalPos = cam.transform.position;
+        float elapsed = 0.0f;
+
+        while(elapsed < ShakeCameraTime){
+            float x = Random.Range(-1f, 1f) * 0.2f;
+            float y = Random.Range(-1f, 1f) * 0.2f;
+
+            cam.transform.position = new Vector3(x, y, originalPos.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        cam.transform.position = originalPos;
+    }
     public void GetText(string input)
     {
         commandText = input.ToLower();
@@ -48,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         {
             MoveLeft();
         }
-        else if (commandText == "right")
+        else if (commandText == "rght")
         {
             MoveRight();
         }
@@ -68,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             PlayerHP.hp -= 1;
+            StartCoroutine(CamShake());
             Debug.Log("Anda Gagal, Terbentur Dinding Kiri");
         }
     }
@@ -82,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             PlayerHP.hp -= 1;
+            StartCoroutine(CamShake());
             Debug.Log("Anda Gagal, Terbentur Dinding Kanan");
         }
     }

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SinglePlayer : MonoBehaviour
 {
     [SerializeField] private GameObject closeDoorPrefab;
     [SerializeField] private GameObject openDoorPrefab;
     public float time = 3f;
+    public TextMeshProUGUI scoreText;
     public GameObject HealthPickup;
     private float originalTime;
 
@@ -26,6 +28,10 @@ public class SinglePlayer : MonoBehaviour
     {
             
 
+    }
+
+    void updateScore(){
+        scoreText.text = score.ToString();
     }
 
     IEnumerator SpawnHealthPickup(){
@@ -116,6 +122,7 @@ public class SinglePlayer : MonoBehaviour
     yield return new WaitForSeconds(time);
     time = originalTime;
     score += 1;
+    updateScore();
     bool isSpawnHealthPickup = Random.Range(0,2) == 0;
     if(isSpawnHealthPickup){
         StartCoroutine(SpawnHealthPickup());

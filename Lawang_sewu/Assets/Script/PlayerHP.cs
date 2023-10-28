@@ -16,6 +16,8 @@ public class PlayerHP : MonoBehaviour
     bool isHit;
 
     public static int hp;
+      public Camera cam;
+          public float ShakeCameraTime = 1f;
     void Start()
     {
         hp = 3;
@@ -70,6 +72,7 @@ public class PlayerHP : MonoBehaviour
         {
             isHit = true;
             hp -= 1;
+            StartCoroutine(CamShake());
         }
         else
         {
@@ -87,4 +90,20 @@ public class PlayerHP : MonoBehaviour
         }
 
     }
+
+     IEnumerator CamShake(){
+        Vector3 originalPos = cam.transform.position;
+        float elapsed = 0.0f;
+
+        while(elapsed < ShakeCameraTime){
+            float x = Random.Range(-1f, 1f) * 0.2f;
+            float y = Random.Range(-1f, 1f) * 0.2f;
+
+            cam.transform.position = new Vector3(x, y, originalPos.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        cam.transform.position = originalPos;
+    }
+
 }

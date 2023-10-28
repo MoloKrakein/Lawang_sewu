@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: prompt - gameplay_0
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 2177
+        width: 8117
+        height: 5318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 941, y: 0, z: 623, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab4c064e423ef44aa7421d13d68e8be
+      internalID: 371330739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      prompt - gameplay_0: 371330739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
