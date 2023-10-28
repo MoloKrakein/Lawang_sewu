@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (commandText == "Left" || commandText == "left" || commandText == "LEFT")
+            if (commandText == "left")
             {
                 if (playerPos.position.x > -2)
                 {
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
                 commandText = null;
             }
 
-            else if (commandText == "Right" || commandText == "right" || commandText == "RIGHT")
+            else if (commandText == "right")
             {
                 if (playerPos.position.x < 2)
                 {
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void GetText()
     {
-        commandText = textBox.text;
+        commandText = textBox.text.ToLower();
         textBox.text = "";
         textBox.ActivateInputField();
         textBox.Select();
