@@ -13,7 +13,7 @@ public class PlayerHP : MonoBehaviour
     GameObject mid;
     GameObject bot;
 
-    // bool isHit;
+    bool isHit;
 
     int hp;
     int currentHp;
@@ -44,7 +44,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Door")
         {
-            // isHit = true;
+            isHit = true;
             hp -= 1;
 
             if (hp == 2 && bot != null)
@@ -66,7 +66,7 @@ public class PlayerHP : MonoBehaviour
         }
         else
         {
-            // isHit = false;
+            isHit = false;
         }
     }
 }
