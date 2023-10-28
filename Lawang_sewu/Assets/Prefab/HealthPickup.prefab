@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 793600573794134102}
   - component: {fileID: 8185107753118749894}
   - component: {fileID: 1738236706255906654}
+  - component: {fileID: -5128849678047142609}
   m_Layer: 0
   m_Name: HealthPickup
   m_TagString: Untagged
@@ -157,4 +158,18 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 5
+--- !u!114 &-5128849678047142609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4400364049699552001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d31521271f897a40837f4ceb449b4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  lifeTime: 10
