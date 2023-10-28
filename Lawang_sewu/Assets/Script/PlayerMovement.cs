@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            PlayerHP.hp -= 1;
             Debug.Log("Anda Gagal, Terbentur Dinding Kiri");
         }
     }
@@ -80,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            PlayerHP.hp -= 1;
             Debug.Log("Anda Gagal, Terbentur Dinding Kanan");
         }
     }

@@ -15,12 +15,10 @@ public class PlayerHP : MonoBehaviour
 
     bool isHit;
 
-    int hp;
-    int currentHp;
+    public static int hp;
     void Start()
     {
         hp = 3;
-        // isHit = false;
         bot = GameObject.Find(Bottom.name);
         mid = GameObject.Find(Mid.name);
         top = GameObject.Find(Top.name);
@@ -29,16 +27,37 @@ public class PlayerHP : MonoBehaviour
 
     void Update()
     {
-        /*currentHp = hp;
-        if (hp == currentHp - 1)
+        if (hp == 2 && bot != null)
         {
-            isHit = true;
-            Debug.Log("ADA");
+            Bottom.enabled = false;
+            bot.SetActive(false);
         }
-        else
+        else if (hp == 1 && mid != null)
         {
-            Debug.Log("HILANG");
-        }*/
+            Mid.enabled = false;
+            mid.SetActive(false);
+        }
+        else if (hp == 0 && top != null)
+        {
+            Top.enabled = false;
+            top.SetActive(false);
+            Debug.Log("YOU LOSE");
+        }
+        else if(hp == 1)
+        {
+            Top.enabled = true;
+            top.SetActive(true);
+        }
+        else if(hp == 2)
+        {
+            Mid.enabled = true;
+            mid.SetActive(true);
+        }
+        else if(hp == 3)
+        {
+            Bottom.enabled = true;
+            bot.SetActive(true);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,27 +65,21 @@ public class PlayerHP : MonoBehaviour
         {
             isHit = true;
             hp -= 1;
-
-            if (hp == 2 && bot != null)
-            {
-                Destroy(Bottom);
-                Destroy(bot);
-            }
-            else if (hp == 1 && mid != null)
-            {
-                Destroy(Mid);
-                Destroy(mid);
-            }
-            else if (hp == 0 && top != null)
-            {
-                Destroy(Top);
-                Destroy(top);
-                Debug.Log("YOU LOSE");
-            }
         }
         else
         {
             isHit = false;
         }
+
+        if (collision.CompareTag("Health"))
+        {
+            if(hp < 3)
+            {
+                hp += 1;
+                Debug.Log("Get HP");
+            }
+            Destroy(collision.gameObject);
+        }
+
     }
 }
