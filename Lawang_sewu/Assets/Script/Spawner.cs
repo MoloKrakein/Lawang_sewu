@@ -9,9 +9,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject openDoorPrefab;
     public GameObject Reseter;
     public float reseterPos=8f;
-    private bool leftLaneClicked = false;
-    private bool rightLaneClicked = false;
-    private bool middleLaneClicked = false;
+
 
     private void Start()
     {
