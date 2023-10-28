@@ -19,10 +19,9 @@ public class GameManager : MonoBehaviour
         // wait 1 seconds
         StartCoroutine(LoadGameScene());
     }
-    public void QuitGame()
+    void QuitGame()
     {
-        // wait 1 seconds
-        StartCoroutine(LoadQuitGame());
+       StartCoroutine(LoadQuitGame());
     }
 
     // 2 Second Timer before load GameScene
@@ -30,10 +29,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Game Scene");
     }
-
+    
     IEnumerator LoadQuitGame(){
         yield return new WaitForSeconds(1f);
         Application.Quit();
     }
-    
 }
