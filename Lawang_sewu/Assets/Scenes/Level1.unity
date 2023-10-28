@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 789295953}
+  speed: 5
 --- !u!1 &434398339
 GameObject:
   m_ObjectHideFlags: 0
