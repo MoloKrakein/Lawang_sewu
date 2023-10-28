@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Health
+  - Cant Click
   layers:
   - Default
   - TransparentFX
