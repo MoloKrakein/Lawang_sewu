@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        playerPos = transform; // You don't need gameObject.transform; transform is a reference to the current object's Transform.
+        playerPos = transform;
+        textBox.onSubmit.AddListener(GetText);
         textBox.ActivateInputField();
         textBox.Select();
     }
@@ -24,23 +25,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isMoving)
         {
-            // Move towards the destination position
             transform.position = Vector3.MoveTowards(transform.position, destinationPosition, Time.deltaTime * speed);
 
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (transform.position == destinationPosition)
             {
-                if (transform.position == destinationPosition)
-                {
-                    isMoving = false;
-                }
-
+                isMoving = false;
             }
+
         }
+        textBox.ActivateInputField();
+        textBox.Select();
     }
 
-    public void GetText()
+    public void GetText(string input)
     {
-        commandText = textBox.text.ToLower();
+        commandText = input.ToLower();
         textBox.text = "";
         textBox.ActivateInputField();
         textBox.Select();
