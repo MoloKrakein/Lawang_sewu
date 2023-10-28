@@ -15,12 +15,10 @@ public class PlayerHP : MonoBehaviour
 
     bool isHit;
 
-    int hp;
-    int currentHp;
+    public static int hp;
     void Start()
     {
         hp = 3;
-        // isHit = false;
         bot = GameObject.Find(Bottom.name);
         mid = GameObject.Find(Mid.name);
         top = GameObject.Find(Top.name);
@@ -29,16 +27,22 @@ public class PlayerHP : MonoBehaviour
 
     void Update()
     {
-        /*currentHp = hp;
-        if (hp == currentHp - 1)
+        if (hp == 2 && bot != null)
         {
-            isHit = true;
-            Debug.Log("ADA");
+            Destroy(Bottom);
+            Destroy(bot);
         }
-        else
+        else if (hp == 1 && mid != null)
         {
-            Debug.Log("HILANG");
-        }*/
+            Destroy(Mid);
+            Destroy(mid);
+        }
+        else if (hp == 0 && top != null)
+        {
+            Destroy(Top);
+            Destroy(top);
+            Debug.Log("YOU LOSE");
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,27 +50,11 @@ public class PlayerHP : MonoBehaviour
         {
             isHit = true;
             hp -= 1;
-
-            if (hp == 2 && bot != null)
-            {
-                Destroy(Bottom);
-                Destroy(bot);
-            }
-            else if (hp == 1 && mid != null)
-            {
-                Destroy(Mid);
-                Destroy(mid);
-            }
-            else if (hp == 0 && top != null)
-            {
-                Destroy(Top);
-                Destroy(top);
-                Debug.Log("YOU LOSE");
-            }
         }
         else
         {
             isHit = false;
         }
+
     }
 }
