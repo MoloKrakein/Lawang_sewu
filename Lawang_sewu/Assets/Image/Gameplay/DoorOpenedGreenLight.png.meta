@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: f50002c60ac04a2478e944780e311435
-=======
-guid: 1aa7173b99d74b54b808b5db00263043
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,11 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,11 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
     buildTarget: WebGL
-=======
-    buildTarget: Standalone
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,11 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
     buildTarget: Standalone
-=======
-    buildTarget: Android
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -141,7 +121,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: DoorOpenedGreenLight_0
@@ -158,15 +137,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6e12a0dc0c434438e3e78f54ceec99
-      internalID: 749988385
+      spriteID: 429dba3eef4e2404685778204b41192e
+      internalID: 171593440
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-    sprites: []
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
     outline: []
     physicsShape: []
     bones: []
@@ -177,12 +153,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
     nameFileIdTable:
-      DoorOpenedGreenLight_0: 749988385
-=======
-    nameFileIdTable: {}
->>>>>>> 12d4d07fe924a5ca18c92682ba7ed8fe8d0de707
+      DoorOpenedGreenLight_0: 171593440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
