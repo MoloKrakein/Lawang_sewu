@@ -1333,13 +1333,8 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-<<<<<<< HEAD
   m_GlobalFontAsset: {fileID: 11400000, guid: eb96f28e2237e494f8bf0a6c64866f86, type: 2}
   m_OnFocusSelectAll: 1
-=======
-  m_GlobalFontAsset: {fileID: 0}
-  m_OnFocusSelectAll: 0
->>>>>>> c0747983a435222f5717f310eec30a9db11c810a
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
