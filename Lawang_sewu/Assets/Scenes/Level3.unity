@@ -1120,7 +1120,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 8088683594654775863, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
       propertyPath: speed
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8088683594654775863, guid: 2fa277feba3ffb14f941b3c09960aac8, type: 3}
       propertyPath: textBox
