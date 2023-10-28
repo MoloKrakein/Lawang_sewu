@@ -29,19 +29,34 @@ public class PlayerHP : MonoBehaviour
     {
         if (hp == 2 && bot != null)
         {
-            Destroy(Bottom);
-            Destroy(bot);
+            Bottom.enabled = false;
+            bot.SetActive(false);
         }
         else if (hp == 1 && mid != null)
         {
-            Destroy(Mid);
-            Destroy(mid);
+            Mid.enabled = false;
+            mid.SetActive(false);
         }
         else if (hp == 0 && top != null)
         {
-            Destroy(Top);
-            Destroy(top);
+            Top.enabled = false;
+            top.SetActive(false);
             Debug.Log("YOU LOSE");
+        }
+        else if(hp == 1)
+        {
+            Top.enabled = true;
+            top.SetActive(true);
+        }
+        else if(hp == 2)
+        {
+            Mid.enabled = true;
+            mid.SetActive(true);
+        }
+        else if(hp == 3)
+        {
+            Bottom.enabled = true;
+            bot.SetActive(true);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -54,6 +69,16 @@ public class PlayerHP : MonoBehaviour
         else
         {
             isHit = false;
+        }
+
+        if (collision.CompareTag("Health"))
+        {
+            if(hp < 3)
+            {
+                hp += 1;
+                Debug.Log("Get HP");
+            }
+            Destroy(collision.gameObject);
         }
 
     }
