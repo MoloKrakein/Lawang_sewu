@@ -44,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
                 }
                 commandText = null;
             }
+            else
+            {
+                Debug.Log("Typo");
+            }
         }
     }
 
