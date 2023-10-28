@@ -27,32 +27,32 @@ public class PlayerHP : MonoBehaviour
 
     void Update()
     {
-        if (hp == 2 && bot != null)
+        if (hp == 2 && bot.active == true)
         {
             Bottom.enabled = false;
             bot.SetActive(false);
         }
-        else if (hp == 1 && mid != null)
+        else if (hp == 1 && mid.active == true)
         {
             Mid.enabled = false;
             mid.SetActive(false);
         }
-        else if (hp == 0 && top != null)
+        else if (hp == 0 && top.active == true)
         {
             Top.enabled = false;
             top.SetActive(false);
         }
-        else if(hp == 0)
+        else if(hp == 1 && top.active == false)
         {
             Top.enabled = true;
             top.SetActive(true);
         }
-        else if(hp == 1)
+        else if(hp == 2 && mid.active == false)
         {
             Mid.enabled = true;
             mid.SetActive(true);
         }
-        else if(hp == 2)
+        else if(hp == 3 && bot.active == false)
         {
             Bottom.enabled = true;
             bot.SetActive(true);
