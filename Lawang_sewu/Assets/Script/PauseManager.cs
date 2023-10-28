@@ -36,13 +36,27 @@ public class PauseManager : MonoBehaviour
 
     void Resume()
     {
-        canvas.enabled = false;
-        Time.timeScale = 1;
+        StartCoroutine(PressResume());
     }
 
     void Back()
     {
+        StartCoroutine(PressBack());
+    }
+
+    IEnumerator PressResume()
+    {
+        canvas.enabled = false;
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(1f);
+    }
+    
+
+    IEnumerator PressBack()
+    {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main Menu");
+        yield return new WaitForSeconds(1f);    
     }
 
 
