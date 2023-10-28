@@ -16,10 +16,22 @@ public class GameManager : MonoBehaviour
 
     void GameScene()
     {
-        SceneManager.LoadScene("Game Scene");
+        // wait 1 seconds
+        StartCoroutine(LoadGameScene());
     }
     void QuitGame()
     {
+       StartCoroutine(LoadQuitGame());
+    }
+
+    // 2 Second Timer before load GameScene
+    IEnumerator LoadGameScene(){
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Game Scene");
+    }
+    
+    IEnumerator LoadQuitGame(){
+        yield return new WaitForSeconds(1f);
         Application.Quit();
     }
 }
