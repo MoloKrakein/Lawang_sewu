@@ -5,11 +5,14 @@ using UnityEngine;
 public class ClickDoor : MonoBehaviour
 {
     public GameObject CloseDoor;
-    
+    public GameObject Reseter;
+
     private GameObject ThisDoor;
     public float CoolDown = 5f;
     private static bool isClicked = false; // static variable shared among all instances
     private float nextClickTime;
+    private static int maxClose = 2;
+    public static int currentClose = 0;
 
     // get this gameobject
     void Start()
@@ -17,14 +20,16 @@ public class ClickDoor : MonoBehaviour
         ThisDoor = gameObject;
     }
 
-   public void CloseThisDoor(){
+    public void CloseThisDoor()
+    {
         // close this door
         Instantiate(CloseDoor, ThisDoor.transform.position, Quaternion.identity);
         // destroy this door
         Destroy(ThisDoor);
     }
 
-    private bool thisDoorClicked(){
+    private bool thisDoorClicked()
+    {
         // check if this door is clicked
         if (Input.GetMouseButtonDown(0))
         {
@@ -33,12 +38,13 @@ public class ClickDoor : MonoBehaviour
             // check if the mouse position is on this door
             if (ThisDoor.GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePosition))
             {
+                currentClose += 1;
                 return true;
             }
         }
         return false;
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -46,7 +52,7 @@ public class ClickDoor : MonoBehaviour
         if (thisDoorClicked())
         {
             // if this door is clicked and not in cooldown
-            if (Time.time >= nextClickTime && !isClicked)
+            if (Time.time >= nextClickTime && !isClicked && currentClose <= maxClose)
             {
                 // start the timer
                 StartCoroutine(ClickTimer());
@@ -67,4 +73,5 @@ public class ClickDoor : MonoBehaviour
         // set isClicked to false
         isClicked = false;
     }
+
 }

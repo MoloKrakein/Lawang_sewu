@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject closeDoorPrefab;
     [SerializeField] private GameObject openDoorPrefab;
+    public GameObject Reseter;
     private bool leftLaneClicked = false;
     private bool rightLaneClicked = false;
     private bool middleLaneClicked = false;
@@ -20,6 +21,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("SpawnDoor", 2f, 3f);
+        InvokeRepeating("SpawnReseter", 2f, 3f);
 
     }
 
@@ -30,6 +32,11 @@ public class Spawner : MonoBehaviour
         Mid.onClick.AddListener(MiddleLaneClicked);
         Right.onClick.AddListener(RightLaneClicked);
 
+    }
+
+    private void SpawnReseter()
+    {
+        Instantiate(Reseter, new Vector3(0, 7.5f, 0), Quaternion.identity);
     }
 
     private void SpawnDoor()
@@ -142,10 +149,5 @@ public class Spawner : MonoBehaviour
     public void RightLaneClicked() 
     {
         rightLaneClicked = true;
-    }
-
-    public void CheckFull()
-    {
-
     }
 }
