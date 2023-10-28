@@ -33,6 +33,7 @@ public class ClickDoor : MonoBehaviour
         // check if this door is clicked
         if (Input.GetMouseButtonDown(0))
         {
+            
             // get the mouse position
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             // check if the mouse position is on this door
