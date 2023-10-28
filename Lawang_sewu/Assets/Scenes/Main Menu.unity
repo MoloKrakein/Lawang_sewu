@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4287016802570832867, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1186507794, guid: 7d48390037ea0464982f041c1b4510b4, type: 3}
     - target: {fileID: 4534454886534515495, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_SizeDelta.x
       value: 450
@@ -493,6 +497,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1621429990, guid: ecc0c68751ebf124a839e8736b452099, type: 3}
+    - target: {fileID: 6261695217588803693, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261695217588803693, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261695217588803693, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261695217588803693, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6608044922250668536, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -504,6 +524,10 @@ PrefabInstance:
     - target: {fileID: 6608044922250668536, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587081797086722484, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7911244522733696237, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_Transition

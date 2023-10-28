@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: db5a6a201d12f0c4d884f3296ec594ae
+=======
+guid: 7d48390037ea0464982f041c1b4510b4
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +38,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +51,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 1080
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +97,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<< HEAD
     buildTarget: WebGL
+=======
+    buildTarget: Standalone
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +114,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<< HEAD
     buildTarget: Standalone
+=======
+    buildTarget: Android
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -121,7 +145,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: lawang sweu_0
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 307
+        width: 1453
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad1381a838748e44aadcd314bb0b554
+      internalID: 1186507794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +181,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      lawang sweu_0: 1186507794
+>>>>>>> c524a58eb30c774b5ff394cad4fe37440f67e08a
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
