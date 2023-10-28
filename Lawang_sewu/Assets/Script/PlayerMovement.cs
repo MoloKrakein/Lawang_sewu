@@ -27,9 +27,13 @@ public class PlayerMovement : MonoBehaviour
             // Move towards the destination position
             transform.position = Vector3.MoveTowards(transform.position, destinationPosition, Time.deltaTime * speed);
 
-            if (transform.position == destinationPosition)
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                isMoving = false;
+                if (transform.position == destinationPosition)
+                {
+                    isMoving = false;
+                }
+
             }
         }
     }
