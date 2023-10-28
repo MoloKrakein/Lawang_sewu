@@ -320,6 +320,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1676062465 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 763919995259520974, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+  m_PrefabInstance: {fileID: 4516129810095085233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4516129810095085233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -336,10 +341,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 31455217, guid: bcc677decd09c8f4ea873760a4471b4d, type: 3}
+    - target: {fileID: 763919995259520974, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 855334285685148421, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_Name
       value: Main Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 1222666477135985651, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      propertyPath: chose
+      value: 
+      objectReference: {fileID: 1676062465}
     - target: {fileID: 1784935920056929203, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -536,6 +549,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 5829176079587520019, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
     - {fileID: 5216935623228621074, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+    - {fileID: 2036592370393655801, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+    - {fileID: 1821042269164343781, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7187814538223900409, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
