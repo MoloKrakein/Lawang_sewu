@@ -13,14 +13,14 @@ public class PlayerHP : MonoBehaviour
     GameObject mid;
     GameObject bot;
 
-    bool isHit;
+    // bool isHit;
 
     int hp;
     int currentHp;
     void Start()
     {
         hp = 3;
-        isHit = false;
+        // isHit = false;
         bot = GameObject.Find(Bottom.name);
         mid = GameObject.Find(Mid.name);
         top = GameObject.Find(Top.name);
@@ -44,7 +44,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Door")
         {
-            isHit = true;
+            // isHit = true;
             hp -= 1;
 
             if (hp == 2 && bot != null)
@@ -66,7 +66,7 @@ public class PlayerHP : MonoBehaviour
         }
         else
         {
-            isHit = false;
+            // isHit = false;
         }
     }
 }
