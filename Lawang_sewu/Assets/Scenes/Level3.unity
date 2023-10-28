@@ -814,7 +814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2772491716508590344, guid: 36be8de667ad43d499e06464241bb95a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2772491716508590344, guid: 36be8de667ad43d499e06464241bb95a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1213,6 +1213,10 @@ PrefabInstance:
       propertyPath: Reseter
       value: 
       objectReference: {fileID: 8153147759129053577, guid: e826c691ee0ba1748bdc4489971b0bf7, type: 3}
+    - target: {fileID: 7649017827562780255, guid: e91da6ea6b3b18945ab17ca57deb34ec, type: 3}
+      propertyPath: reseterPos
+      value: 8.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7649017827562780255, guid: e91da6ea6b3b18945ab17ca57deb34ec, type: 3}
       propertyPath: openDoorPrefab
       value: 

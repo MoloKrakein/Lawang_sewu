@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject closeDoorPrefab;
     [SerializeField] private GameObject openDoorPrefab;
     public GameObject Reseter;
+    public float reseterPos=8f;
     private bool leftLaneClicked = false;
     private bool rightLaneClicked = false;
     private bool middleLaneClicked = false;
@@ -25,7 +26,7 @@ public class Spawner : MonoBehaviour
 
     private void SpawnReseter()
     {
-        Instantiate(Reseter, new Vector3(0, 7.5f, 0), Quaternion.identity);
+        Instantiate(Reseter, new Vector3(0, reseterPos, 0), Quaternion.identity);
     }
 
     private void SpawnDoor()
