@@ -41,22 +41,27 @@ public class PlayerHP : MonoBehaviour
         {
             Top.enabled = false;
             top.SetActive(false);
-            Debug.Log("YOU LOSE");
         }
-        else if(hp == 1)
+        else if(hp == 0)
         {
             Top.enabled = true;
             top.SetActive(true);
         }
-        else if(hp == 2)
+        else if(hp == 1)
         {
             Mid.enabled = true;
             mid.SetActive(true);
         }
-        else if(hp == 3)
+        else if(hp == 2)
         {
             Bottom.enabled = true;
             bot.SetActive(true);
+        }
+        else if (hp == -1)
+        {
+            Debug.Log("YOU LOSE");
+            Time.timeScale = 0;
+            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
