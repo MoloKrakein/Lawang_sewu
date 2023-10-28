@@ -343,6 +343,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1553721960}
+    - target: {fileID: 6007796335561035709, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007796335561035709, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6304519719372032228, guid: 8f8df720c97e25f4a806a9770877ee29, type: 3}
       propertyPath: m_Sprite
       value: 
