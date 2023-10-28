@@ -45,6 +45,9 @@ public class SinglePlayer : MonoBehaviour
     IEnumerator SpawnDoorRandom(){
         int random = Random.Range(0,12);
         time = Random.Range(1.5f, time);
+        if(Random.Range(0,100) == 100){
+            time = 1f;
+        }
         if(random == 0){
             Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
             Instantiate(closeDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri

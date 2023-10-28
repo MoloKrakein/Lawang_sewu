@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Reg-PixelifySans
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 264314604
   material: {fileID: 514295306392071805}
-  materialHashCode: 0
+  materialHashCode: -1425430324
   m_Version: 1.1.0
   m_SourceFontFileGUID: 7e470b59e88234a469f8231ea9db175b
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 7e470b59e88234a469f8231ea9db175b, type: 3}
@@ -5277,9 +5277,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 0.73125
+    - _ScaleRatioC: 0.73125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
