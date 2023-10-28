@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     // 2 Second Timer before load GameScene
     IEnumerator LoadGameScene(){
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Game Scene");
+        SceneManager.LoadScene("Level2");
     }
     
     IEnumerator LoadQuitGame(){
