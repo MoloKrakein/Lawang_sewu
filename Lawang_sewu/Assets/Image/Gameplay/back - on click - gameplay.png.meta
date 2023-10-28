@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 175cee9d93acbb746a5909eddfca92ec
-=======
-guid: e0dca618244e99845aa30e5da78539c4
->>>>>>> 9b944615fbd17aa7e903675366155c09799a94c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -85,11 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
     buildTarget: WebGL
-=======
-    buildTarget: Standalone
->>>>>>> 9b944615fbd17aa7e903675366155c09799a94c8
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -102,11 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
     buildTarget: Standalone
-=======
-    buildTarget: Android
->>>>>>> 9b944615fbd17aa7e903675366155c09799a94c8
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
