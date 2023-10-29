@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         {
             MoveLeft();
         }
-        else if (commandText == "right")
+        else if (commandText == "right" || commandText == "rght")
         {
             MoveRight();
         }
