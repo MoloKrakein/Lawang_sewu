@@ -94,8 +94,9 @@ public class PlayerHP : MonoBehaviour
     }
 
      IEnumerator CamShake(){
+        Debug.Log("Shake");
         Vector3 originalPos = cam.transform.position;
-        float elapsed = 3.03f;
+        float elapsed = 0.0f;
 
         while(elapsed < ShakeCameraTime){
             float x = Random.Range(-1f, 1f) * 0.2f;
