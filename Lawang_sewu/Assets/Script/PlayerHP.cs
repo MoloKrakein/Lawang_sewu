@@ -95,13 +95,13 @@ public class PlayerHP : MonoBehaviour
 
      IEnumerator CamShake(){
         Vector3 originalPos = cam.transform.position;
-        float elapsed = 0.0f;
+        float elapsed = 3.03f;
 
         while(elapsed < ShakeCameraTime){
             float x = Random.Range(-1f, 1f) * 0.2f;
             float y = Random.Range(-1f, 1f) * 0.2f;
 
-            cam.transform.position = new Vector3(x, y, originalPos.z);
+            cam.transform.position = new Vector3(3+x, y, originalPos.z);
             elapsed += Time.deltaTime;
             yield return null;
         }

@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             float x = Random.Range(-1f, 1f) * 0.2f;
             float y = Random.Range(-1f, 1f) * 0.2f;
 
-            cam.transform.position = new Vector3(x, y, originalPos.z);
+            cam.transform.position = new Vector3(3+x, y, originalPos.z);
             elapsed += Time.deltaTime;
             yield return null;
         }
