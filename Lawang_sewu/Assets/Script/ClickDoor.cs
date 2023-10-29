@@ -6,6 +6,7 @@ public class ClickDoor : MonoBehaviour
 {
     public GameObject CloseDoor;
     public GameObject Reseter;
+    public GameObject DeactiveDoorObj;
 
     private GameObject ThisDoor;
     public float CoolDown = 5f;
@@ -22,6 +23,7 @@ public class ClickDoor : MonoBehaviour
 
     public void CloseThisDoor()
     {
+        // DeactiveDoor();
         // close this door
         Instantiate(CloseDoor, ThisDoor.transform.position, Quaternion.identity);
         // destroy this door
@@ -63,6 +65,12 @@ public class ClickDoor : MonoBehaviour
                 isClicked = true;
             }
         }
+
+        // if openDoorPrefab is collided with tag Cant Click run DeactiveDoor()
+        if (ThisDoor.GetComponent<Collider2D>().CompareTag("Cant Click"))
+        {
+            DeactiveDoor();
+        }
     }
 
     IEnumerator ClickTimer()
@@ -74,5 +82,15 @@ public class ClickDoor : MonoBehaviour
         // set isClicked to false
         isClicked = false;
     }
+
+    void DeactiveDoor()
+    {
+        // swap openDoorPrefab sprite with DeactiveDoorSprite
+    Instantiate(DeactiveDoorObj, ThisDoor.transform.position, Quaternion.identity);
+        // destroy this door
+        Destroy(ThisDoor);
+
+    }
+
 
 }

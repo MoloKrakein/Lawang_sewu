@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2354678124995368636}
   - component: {fileID: 1877583577020361206}
   m_Layer: 0
-  m_Name: BtnDoor
+  m_Name: Deactivate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CloseDoor: {fileID: 4836655810324399964, guid: 0066cd7b81fd1d3409c698fb7d7efe2c, type: 3}
   Reseter: {fileID: 8153147759129053577, guid: e826c691ee0ba1748bdc4489971b0bf7, type: 3}
-  DeactiveDoorObj: {fileID: 4836655810324399964, guid: 4771d4ad1982909408759310c0cd8242, type: 3}
+  DeactiveDoorSprite: {fileID: -1643701785, guid: 3bc46a9a348fea94a89342ed47354f09, type: 3}
   CoolDown: 0
 --- !u!1 &5124291861674459934
 GameObject:
@@ -180,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &188337852938958607
 Transform:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7060744003008512332
 Transform:
   m_ObjectHideFlags: 0

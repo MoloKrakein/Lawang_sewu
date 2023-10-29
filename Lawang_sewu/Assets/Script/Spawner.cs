@@ -41,11 +41,5 @@ public class Spawner : MonoBehaviour
         
     }
 
-    void DeactiveDoor()
-    {
-        // swap openDoorPrefab sprite with DeactiveDoorSprite
-        openDoorPrefab.GetComponent<SpriteRenderer>().sprite = DeactiveDoorSprite;
-
-    }
 
 }
