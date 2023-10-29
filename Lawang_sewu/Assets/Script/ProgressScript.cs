@@ -9,6 +9,9 @@ public class ProgressScript : MonoBehaviour
     public int maxTimerinSeconds = 60;
     private float timeElapsed = 0f;
 
+    public GameObject DoorSpawner;
+
+    public GameObject P1WinText;
     private void Start()
     {
         slider.maxValue = maxTimerinSeconds;
@@ -27,5 +30,17 @@ public class ProgressScript : MonoBehaviour
         {
             slider.value = maxTimerinSeconds;
         }
+
+        if (slider.value == maxTimerinSeconds)
+        {
+            P1Win();
+        }
+    }
+
+    void P1Win()
+    {
+        P1WinText.SetActive(true);
+        Destroy(DoorSpawner);
+
     }
 }

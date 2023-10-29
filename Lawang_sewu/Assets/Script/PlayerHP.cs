@@ -9,6 +9,8 @@ public class PlayerHP : MonoBehaviour
     public Image Mid;
     public Image Bottom;
 
+    public GameObject WinScreen;
+
     GameObject top;
     GameObject mid;
     GameObject bot;
@@ -61,7 +63,7 @@ public class PlayerHP : MonoBehaviour
         }
         else if (hp == -1)
         {
-            Debug.Log("YOU LOSE");
+            WinScreen.SetActive(true);
             Time.timeScale = 0;
             Destroy(gameObject);
         }

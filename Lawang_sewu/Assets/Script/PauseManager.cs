@@ -34,12 +34,12 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    void Resume()
+    public void Resume()
     {
         StartCoroutine(PressResume());
     }
 
-    void Back()
+    public void Back()
     {
         StartCoroutine(PressBack());
     }
