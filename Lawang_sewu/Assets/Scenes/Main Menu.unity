@@ -156,7 +156,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281821808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c28cd572ea876a848b706e5c274c20e6, type: 2}
   m_CullingMode: 0
@@ -468,6 +468,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b969a195c90954085e729bb2cfd77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1352165489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2349729100003444187, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+  m_PrefabInstance: {fileID: 4516129810095085233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1352165494
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352165489}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1516415441
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +575,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545163624}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bd7b04926c6ca5c42bb304d6ece674e7, type: 2}
   m_CullingMode: 0
@@ -867,6 +893,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1115290136674365315, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
       insertIndex: -1
       addedObject: {fileID: 281821813}
+    - targetCorrespondingSourceObject: {fileID: 2349729100003444187, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1352165494}
   m_SourcePrefab: {fileID: 100100000, guid: a92964a1a6e254e4d9ea67e843853c51, type: 3}
 --- !u!1 &4516129810095085234 stripped
 GameObject:
