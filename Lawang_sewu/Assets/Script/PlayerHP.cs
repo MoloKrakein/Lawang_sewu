@@ -63,9 +63,9 @@ public class PlayerHP : MonoBehaviour
         }
         else if (hp == -1)
         {
+            Destroy(gameObject);
             WinScreen.SetActive(true);
             Time.timeScale = 0;
-            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
