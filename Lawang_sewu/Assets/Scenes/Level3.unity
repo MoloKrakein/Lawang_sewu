@@ -795,7 +795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114936679371727537, guid: 80f258cbf8e714d4493c1b20d64003d5, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1114936679371727537, guid: 80f258cbf8e714d4493c1b20d64003d5, type: 3}
       propertyPath: loopPosition.x
@@ -1887,7 +1887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114936679371727537, guid: 80f258cbf8e714d4493c1b20d64003d5, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1114936679371727537, guid: 80f258cbf8e714d4493c1b20d64003d5, type: 3}
       propertyPath: loopPosition.x
