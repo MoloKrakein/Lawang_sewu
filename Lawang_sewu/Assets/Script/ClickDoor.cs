@@ -66,11 +66,6 @@ public class ClickDoor : MonoBehaviour
             }
         }
 
-        // if openDoorPrefab is collided with tag Cant Click run DeactiveDoor()
-        if (ThisDoor.GetComponent<Collider2D>().CompareTag("Cant Click"))
-        {
-            DeactiveDoor();
-        }
     }
 
     IEnumerator ClickTimer()
@@ -86,10 +81,18 @@ public class ClickDoor : MonoBehaviour
     void DeactiveDoor()
     {
         // swap openDoorPrefab sprite with DeactiveDoorSprite
-    Instantiate(DeactiveDoorObj, ThisDoor.transform.position, Quaternion.identity);
+        Instantiate(DeactiveDoorObj, ThisDoor.transform.position, Quaternion.identity);
         // destroy this door
         Destroy(ThisDoor);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Cant Click")
+        {
+            DeactiveDoor();
+        }
     }
 
 
