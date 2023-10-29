@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2354678124995368636}
   - component: {fileID: 1877583577020361206}
   m_Layer: 0
-  m_Name: BtnDoor
+  m_Name: BtnDoorSP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d31521271f897a40837f4ceb449b4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
   lifeTime: 8
 --- !u!114 &1877583577020361206
 MonoBehaviour:
@@ -155,14 +155,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4836655810324399964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e2c2599d935b99468d09377e335a86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CloseDoor: {fileID: 4836655810324399964, guid: 0066cd7b81fd1d3409c698fb7d7efe2c, type: 3}
   Reseter: {fileID: 8153147759129053577, guid: e826c691ee0ba1748bdc4489971b0bf7, type: 3}
-  DeactiveDoorSprite: {fileID: -1643701785, guid: 3bc46a9a348fea94a89342ed47354f09, type: 3}
+  DeactiveDoorObj: {fileID: 0}
   CoolDown: 0
 --- !u!1 &5124291861674459934
 GameObject:
