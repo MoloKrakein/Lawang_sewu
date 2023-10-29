@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 5351049605996679626}
   - component: {fileID: 7553770503876065235}
   - component: {fileID: 3547752371357159760}
+  - component: {fileID: 727584748166675134}
   m_Layer: 0
   m_Name: ProgressBar
   m_TagString: Untagged
@@ -141,6 +142,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 7553770503876065235}
   maxTimerinSeconds: 60
+  DoorSpawner: {fileID: 0}
+  P1WinText: {fileID: 0}
+--- !u!95 &727584748166675134
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3145748219599192520}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd675a1c7cbb6b94b9527079ce620662, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5946743369404609946
 GameObject:
   m_ObjectHideFlags: 0

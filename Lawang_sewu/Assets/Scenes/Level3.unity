@@ -459,7 +459,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4401672847895930692, guid: d3573b6c8585a344796ee21f66820d04, type: 3}
       insertIndex: 7
       addedObject: {fileID: 1031443480}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 348315421962902272, guid: d3573b6c8585a344796ee21f66820d04, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1567062952}
   m_SourcePrefab: {fileID: 100100000, guid: d3573b6c8585a344796ee21f66820d04, type: 3}
 --- !u!224 &64900735 stripped
 RectTransform:
@@ -1283,7 +1286,7 @@ MonoBehaviour:
   Bottom: {fileID: 2096422338}
   WinScreen: {fileID: 1532623430}
   cam: {fileID: 519420031}
-  ShakeCameraTime: 0.2
+  ShakeCameraTime: 0.3
 --- !u!50 &832857907
 Rigidbody2D:
   serializedVersion: 4
@@ -1829,6 +1832,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1275895020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 348315421962902272, guid: d3573b6c8585a344796ee21f66820d04, type: 3}
+  m_PrefabInstance: {fileID: 64900734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1373451890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2149,12 +2157,33 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2201585555234984718, guid: d3573b6c8585a344796ee21f66820d04, type: 3}
   m_PrefabInstance: {fileID: 64900734}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1275895020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1567062952
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275895020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7793cab0faa85b24a84ff5c3f60bb72c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1638518558
 GameObject:
   m_ObjectHideFlags: 0
