@@ -182,13 +182,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Player 2 :
 
-    Click To Close The Door
+    Click the Green Door to Close It
 
 
     ObJective :
 
-    Stop Player
-    1'
+    Stop
+    Player 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a58bff6a0e4da7047870f6fd277f3e19, type: 2}
   m_sharedMaterial: {fileID: -592528485936986916, guid: a58bff6a0e4da7047870f6fd277f3e19, type: 2}
