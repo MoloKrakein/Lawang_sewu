@@ -10,6 +10,7 @@ public class SinglePlayer : MonoBehaviour
     [SerializeField] private GameObject openDoorPrefab;
     public float time = 3f;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreFinalText;
     public GameObject HealthPickup;
     private float originalTime;
 
@@ -32,6 +33,7 @@ public class SinglePlayer : MonoBehaviour
 
     void updateScore(){
         scoreText.text = score.ToString();
+        scoreFinalText.text = score.ToString();
     }
 
     IEnumerator SpawnHealthPickup(){
