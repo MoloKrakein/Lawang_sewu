@@ -89,7 +89,7 @@ public class SinglePlayer : MonoBehaviour
         else if(random == 6){
             Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
             Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
-            Instantiate(openDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
+            Instantiate(closeDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
         }
         else if(random == 7){
             Instantiate(closeDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
@@ -98,7 +98,7 @@ public class SinglePlayer : MonoBehaviour
         }
         else if(random == 8){
             Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu tengah
-            Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
+            Instantiate(closeDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu kiri
             Instantiate(closeDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu kanan
         }
         else if(random == 9){
@@ -118,7 +118,7 @@ public class SinglePlayer : MonoBehaviour
         }
         else if(random == 12){
             Instantiate(openDoorPrefab, new Vector3(0, 7, 0), Quaternion.identity); //pintu
-            Instantiate(openDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu
+            Instantiate(closeDoorPrefab, new Vector3(-2, 7, 0), Quaternion.identity); //pintu
             Instantiate(openDoorPrefab, new Vector3(2, 7, 0), Quaternion.identity); //pintu
         }
     yield return new WaitForSeconds(time);
