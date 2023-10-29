@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Lawang_sewu/Assets/Image/Icon Game/icon game.png.meta
-<<<<<<< HEAD
 guid: feb2d2993f66ea248a5ea82ff436f9f3
-=======
-guid: dfd3815c3ecc253429fb207a17d45c4b
->>>>>>> bd5d6de4a2824e860d09bd570f8c756bd3576bca
-=======
-guid: 6a6ab61db4669a0429201dc4831f145b
->>>>>>> 259ac7ffadf20c9c0a84853513691e35180f4d4e:Lawang_sewu/Assets/Image/Icon Game/icon game rev 2.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,20 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD:Lawang_sewu/Assets/Image/Icon Game/icon game.png.meta
-<<<<<<< HEAD
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> bd5d6de4a2824e860d09bd570f8c756bd3576bca
-=======
-    filterMode: 1
->>>>>>> 259ac7ffadf20c9c0a84853513691e35180f4d4e:Lawang_sewu/Assets/Image/Icon Game/icon game rev 2.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -79,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,15 +81,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
-    buildTarget: WebGL
-=======
     buildTarget: Standalone
->>>>>>> bd5d6de4a2824e860d09bd570f8c756bd3576bca
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,15 +94,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<< HEAD
-    buildTarget: Standalone
-=======
     buildTarget: Android
->>>>>>> bd5d6de4a2824e860d09bd570f8c756bd3576bca
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
