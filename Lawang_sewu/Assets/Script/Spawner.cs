@@ -7,7 +7,6 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject closeDoorPrefab;
     [SerializeField] private GameObject openDoorPrefab;
-    [SerializeField] private Sprite DeactiveDoorSprite;
     public GameObject Reseter;
     public float reseterPos=8f;
 
@@ -21,11 +20,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        // if openDoorPrefab is collided with tag Cant Click run DeactiveDoor()
-        if (openDoorPrefab.GetComponent<Collider2D>().CompareTag("Cant Click"))
-        {
-            DeactiveDoor();
-        }
+
     }
 
     private void SpawnReseter()
